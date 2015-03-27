@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>小初初</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="icon" href="img/favicon.ico" mce_href="/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+<div class="bg_r"></div>
+
+<div id="JS_bool" class="bool"></div>
+
+<script type="text/javascript" src="js/sea.js"></script>
+<script type="text/javascript">
+// var v = Math.ceil(Math.random() * new Date().getTime()).toString(36);
+var v = '1103';
+seajs.config({
+	'map' : [
+		[ /^(.*\.(?:css|js))(.*)$/i, '$1?'+v ]
+	]
+});
+seajs.use('index.js')
+</script>
+</body>
+</html>
